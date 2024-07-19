@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* Центрирование карточек на мобильных устройствах */
+@media (max-width: 767px) {
+    #card-container {
+      justify-items: center;
+    }
+  }
+  
+  /* Скрытие меню на мобильных устройствах и показ при нажатии на кнопку */
+  @media (max-width: 767px) {
+    nav {
+      display: none;
+    }
+  
+    nav.show {
+      display: flex;
+      flex-direction: column;
+    }
+  }
