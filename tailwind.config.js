@@ -1,9 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/public/**/*.{html,js}'],
+  darkMode: 'class', // или 'media'
+  content: ["./public/**/*.{html,js}"], // Обновите путь к вашим файлам
   theme: {
     extend: {},
   },
   plugins: [],
-};
+}
+
+
 
