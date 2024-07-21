@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "fonts.css"; /* Подключите ваш файл со шрифтами */
 /* Центрирование карточек на мобильных устройствах */
 @media (max-width: 767px) {
     #card-container {

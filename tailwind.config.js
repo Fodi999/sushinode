@@ -3,10 +3,15 @@ module.exports = {
   darkMode: 'class', // или 'media'
   content: ["./public/**/*.{html,js}"], // Обновите путь к вашим файлам
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'russo': ['"Russo One"', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }
+
 
 
 

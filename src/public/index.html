@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Seafood Restaurant</title>
+  <meta name="description" content="Enjoy delicious and fresh seafood at our cozy restaurant.">
   <link href="./css/output.css" rel="stylesheet">
+
   <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
   <style>
     /* Стиль для полосы прокрутки */
@@ -38,20 +40,20 @@
 <body class="bg-gray-100 dark:bg-gray-900 dark:text-white h-full flex flex-col overflow-hidden">
   <!-- Fixed top menu -->
   <div class="fixed top-4 left-4 right-4 bg-gray-200 bg-opacity-75 dark:bg-gray-700 dark:bg-opacity-75 p-4 flex justify-between items-center rounded-full z-10">
-    <a href="index.html" class="w-10 h-10 bg-blue-600 bg-opacity-75 text-white rounded-full flex items-center justify-center">
+    <a href="index.html" class="w-10 h-10 bg-blue-600 bg-opacity-75 text-white rounded-full flex items-center justify-center" aria-label="Home">
       <i class='bx bx-home text-2xl'></i>
     </a>
     <div class="flex space-x-4">
-      <a href="https://t.me/your-telegram-link" target="_blank" class="w-10 h-10 bg-blue-600 bg-opacity-75 text-white rounded-full flex items-center justify-center">
+      <a href="https://t.me/your-telegram-link" target="_blank" class="w-10 h-10 bg-blue-600 bg-opacity-75 text-white rounded-full flex items-center justify-center" aria-label="Telegram">
         <i class='bx bxl-telegram text-2xl'></i>
       </a>
-      <a href="https://instagram.com/your-instagram-link" target="_blank" class="w-10 h-10 bg-pink-600 bg-opacity-75 text-white rounded-full flex items-center justify-center">
+      <a href="https://instagram.com/your-instagram-link" target="_blank" class="w-10 h-10 bg-pink-600 bg-opacity-75 text-white rounded-full flex items-center justify-center" aria-label="Instagram">
         <i class='bx bxl-instagram text-2xl'></i>
       </a>
-      <button id="menu-toggle" class="w-10 h-10 md:hidden bg-gray-200 bg-opacity-75 text-black rounded-full flex items-center justify-center dark:bg-gray-700 dark:bg-opacity-75 dark:text-white">
+      <button id="menu-toggle" class="w-10 h-10 md:hidden bg-gray-200 bg-opacity-75 text-black rounded-full flex items-center justify-center dark:bg-gray-700 dark:bg-opacity-75 dark:text-white" aria-label="Menu">
         <i class='bx bx-menu'></i>
       </button>
-      <button id="theme-toggle" class="w-10 h-10 bg-gray-200 bg-opacity-75 text-black rounded-full flex items-center justify-center dark:bg-gray-700 dark:bg-opacity-75 dark:text-white">
+      <button id="theme-toggle" class="w-10 h-10 bg-gray-200 bg-opacity-75 text-black rounded-full flex items-center justify-center dark:bg-gray-700 dark:bg-opacity-75 dark:text-white" aria-label="Toggle Theme">
         <i id="theme-icon" class='bx bx-moon text-2xl'></i> 
       </button>
     </div>
@@ -66,7 +68,7 @@
           <img src="./images/seafood1.webp" alt="Delicious seafood" class="w-full h-full object-cover">
           <div class="absolute bottom-0 bg-black bg-opacity-50 text-white p-4 w-full">
             <a href="about.html#delicious-seafood" class="block transition duration-300">
-              <h3 class="text-xl font-semibold">Delicious Seafood</h3>
+              <h3 class="text-xl font-semibold font-russo">Fomin Dmitry Szef kuchni</h3>
               <p class="mt-2">Experience the taste of fresh seafood.</p>
             </a>
           </div>
@@ -136,7 +138,7 @@
           <img src="./images/seafood1.webp" alt="Restaurant interior" class="w-full h-full object-cover">
           <div class="absolute bottom-0 bg-black bg-opacity-50 text-white p-4 w-full">
             <a href="about.html#cozy-atmosphere" class="block transition duration-300">
-              <h3 class="text-xl font-semibold">Фомин Дмитрий - Шеф повар</h3>
+              <h3 class="text-xl font-semibold">Cozy Atmosphere</h3>
               <p class="mt-2">Enjoy a cozy and welcoming environment.</p>
             </a>
           </div>
@@ -149,6 +151,33 @@
   <script src="./js/menu-toggle.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

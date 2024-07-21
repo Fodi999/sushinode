@@ -1,10 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About - Seafood Restaurant</title>
+  <meta name="description" content="Learn more about our seafood restaurant, including our fresh and delicious offerings, our beautifully designed restaurant interior, and our chef Dmitry Fomin.">
   <link rel="stylesheet" href="/css/output.css">
   <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
 </head>
@@ -12,39 +12,83 @@
 <body class="bg-gray-100 dark:bg-gray-900 dark:text-white min-h-screen flex flex-col items-center">
   <!-- Fixed top menu -->
   <div class="fixed top-4 left-4 right-4 bg-gray-200 bg-opacity-75 dark:bg-gray-700 dark:bg-opacity-75 p-4 flex justify-between items-center rounded-full z-10">
-    <a href="index.html" class="w-10 h-10 bg-blue-600 bg-opacity-75 text-white rounded-full flex items-center justify-center">
+    <a href="index.html" class="w-10 h-10 bg-blue-600 bg-opacity-75 text-white rounded-full flex items-center justify-center" aria-label="Home">
       <i class='bx bx-home text-2xl'></i>
     </a>
     <div class="flex space-x-4">
-      <a href="https://t.me/your-telegram-link" target="_blank" class="w-10 h-10 bg-blue-600 bg-opacity-75 text-white rounded-full flex items-center justify-center">
+      <a href="https://t.me/your-telegram-link" target="_blank" class="w-10 h-10 bg-blue-600 bg-opacity-75 text-white rounded-full flex items-center justify-center" aria-label="Telegram">
         <i class='bx bxl-telegram text-2xl'></i>
       </a>
-      <a href="https://instagram.com/your-instagram-link" target="_blank" class="w-10 h-10 bg-pink-600 bg-opacity-75 text-white rounded-full flex items-center justify-center">
+      <a href="https://instagram.com/your-instagram-link" target="_blank" class="w-10 h-10 bg-pink-600 bg-opacity-75 text-white rounded-full flex items-center justify-center" aria-label="Instagram">
         <i class='bx bxl-instagram text-2xl'></i>
       </a>
-      <button id="menu-toggle" class="w-10 h-10 md:hidden bg-gray-200 bg-opacity-75 text-black rounded-full flex items-center justify-center dark:bg-gray-700 dark:bg-opacity-75 dark:text-white">
+      <button id="menu-toggle" class="w-10 h-10 md:hidden bg-gray-200 bg-opacity-75 text-black rounded-full flex items-center justify-center dark:bg-gray-700 dark:bg-opacity-75 dark:text-white" aria-label="Menu">
         <i class='bx bx-menu'></i>
       </button>
-      <button id="theme-toggle" class="w-10 h-10 bg-gray-200 bg-opacity-75 text-black rounded-full flex items-center justify-center dark:bg-gray-700 dark:bg-opacity-75 dark:text-white">
+      <button id="theme-toggle" class="w-10 h-10 bg-gray-200 bg-opacity-75 text-black rounded-full flex items-center justify-center dark:bg-gray-700 dark:bg-opacity-75 dark:text-white" aria-label="Toggle Theme">
         <i id="theme-icon" class='bx bx-moon text-2xl'></i> 
       </button>
     </div>
   </div>
 
-  <!-- Card Sections -->
-  <div id="delicious-seafood" class="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden w-full max-w-4xl mx-4 mt-28 md:mt-32 px-4 sm:px-8">
+
+  <div id="chef-info" class="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden w-full max-w-7xl mx-4 mt-28 md:mt-32">
     <div class="flex flex-col md:flex-row">
-      <img src="/images/seafood1.webp" alt="Delicious Seafood" class="w-full md:w-1/3 h-auto object-cover p-2">
+      <img src="/images/seafood1.webp" alt="Chef Dmitry Fomin" class="w-full md:w-1/3 h-auto object-cover">
       <div class="p-6 flex-grow">
-        <h2 class="text-3xl font-semibold text-blue-600 dark:text-blue-400">Delicious Seafood</h2>
-        <p class="mt-4 text-gray-600 dark:text-gray-300">Experience the taste of fresh seafood.</p>
+        <h2 class="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-4">Dmytro Fomin - Szef Kuchni</h2>
+        <div class="space-y-4 text-lg list-disc pl-6">
+          <p class="text-gray-600 dark:text-gray-300 highlight">Adres: 80-631 GDANSK, UL.WILHELMA STRYJEWSKIEGO 39A/21</p>
+          <p class="text-gray-600 dark:text-gray-300 highlight">Telefon: +48576212418</p>
+          <p class="text-gray-600 dark:text-gray-300 highlight">Email: <a href="mailto:fodi85999@gmail.com" class="text-blue-500">fodi85999@gmail.com</a></p>
+          <p class="text-gray-600 dark:text-gray-300 highlight">Instagram: <a href="https://instagram.com/fodifood" class="text-blue-500" target="_blank">fodifood</a></p>
+          <hr class="border-gray-300 dark:border-gray-600">
+          <p class="text-gray-600 dark:text-gray-300 highlight">Pracował w FISH in HOUSE (Dniepr, Szef Kuchni) od 06.10.2018 do 06.01.2022. Opracowywałem nowe produkty, przeprowadzałem badania jakościowe, przedłużałem okres przydatności do spożycia, zakupywałem sprzęt do procesów produkcyjnych, szkoliłem personel, wdrażałem HACCP, konfigurowałem procesy produkcyjne.</p>
+          <hr class="border-gray-300 dark:border-gray-600">
+          <p class="text-gray-600 dark:text-gray-300 highlight">Umiejętności:</p>
+          <ul class="list-disc pl-6">
+            <li class="text-gray-600 dark:text-gray-300 highlight">zorientowany na cel</li>
+            <li class="text-gray-600 dark:text-gray-300 highlight">towarzyski</li>
+            <li class="text-gray-600 dark:text-gray-300 highlight">odporny na stres</li>
+            <li class="text-gray-600 dark:text-gray-300 highlight">zaradny</li>
+            <li class="text-gray-600 dark:text-gray-300 highlight">Szeroka wiedza produktowa</li>
+            <li class="text-gray-600 dark:text-gray-300 highlight">opracowywanie nowych produktów</li>
+            <li class="text-gray-600 dark:text-gray-300 highlight">szkolenie pracowników w zakresie prawidłowego użytkowania produktów</li>
+          </ul>
+          <hr class="border-gray-300 dark:border-gray-600">
+          <p class="text-gray-600 dark:text-gray-300 highlight">Doświadczenie zawodowe:</p>
+          <ul class="list-disc pl-6">
+            <li class="text-gray-600 dark:text-gray-300 highlight">20 lat. Pracował za granicą w restauracjach w Polsce, na Litwie, w Estonii, Niemczech, Francji, Kanadzie.</li>
+          </ul>
+          <hr class="border-gray-300 dark:border-gray-600">
+          <p class="text-gray-600 dark:text-gray-300 highlight">Edukacja:</p>
+          <ul class="list-disc pl-6">
+            <li class="text-gray-600 dark:text-gray-300 highlight">dyplomowany kucharz, Instytut Instytucji Oświatowych, Ukraina, Dniepr - ZPT-53, od 01.09.2002 do 31.05.2003.</li>
+            <li class="text-gray-600 dark:text-gray-300 highlight">Studia ukończył z wyróżnieniem, odbył staż w restauracji Charlie's.</li>
+          </ul>
+          <hr class="border-gray-300 dark:border-gray-600">
+          <p class="text-gray-600 dark:text-gray-300 highlight">Programista Aplikacji</p>
+          <hr class="border-gray-300 dark:border-gray-600">
+          <p class="text-gray-600 dark:text-gray-300 highlight">Umiejętności techniczne:</p>
+          <ul class="list-disc pl-6">
+            <li class="text-gray-600 dark:text-gray-300 highlight">Frontend Development</li>
+            <li class="text-gray-600 dark:text-gray-300 highlight">Backend Development</li>
+            <li class="text-gray-600 dark:text-gray-300 highlight">Grafika 3D</li>
+          </ul>
+          <hr class="border-gray-300 dark:border-gray-600">
+          <p class="text-gray-600 dark:text-gray-300 highlight">Języki programowania:</p>
+          <ul class="list-disc pl-6">
+            <li class="text-gray-600 dark:text-gray-300 highlight">JavaScript</li>
+            <li class="text-gray-600 dark:text-gray-300 highlight">Go (Golang)</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
-
-  <div id="fresh-seafood" class="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden w-full max-w-4xl mx-4 mt-10 px-4 sm:px-8">
+  
+  <div id="fresh-seafood" class="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden w-full max-w-7xl mx-4 mt-28 md:mt-32">
     <div class="flex flex-col md:flex-row">
-      <img src="/images/seafood2.webp" alt="Fresh Seafood" class="w-full md:w-1/3 h-auto object-cover p-2">
+      <img src="/images/seafood2.webp" alt="Fresh Seafood" class="w-full md:w-1/3 h-auto object-cover ">
       <div class="p-6 flex-grow">
         <h2 class="text-3xl font-semibold text-blue-600 dark:text-blue-400">Fresh Seafood</h2>
         <p class="mt-4 text-gray-600 dark:text-gray-300">Enjoy our freshly caught seafood.</p>
@@ -53,9 +97,9 @@
   </div>
 
   <!-- Add more sections for each anchor as needed -->
-  <div id="restaurant-interior" class="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden w-full max-w-4xl mx-4 mt-10 px-4 sm:px-8">
+  <div id="restaurant-interior" class="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden w-full max-w-7xl mx-4 mt-28 md:mt-32">
     <div class="flex flex-col md:flex-row">
-      <img src="/images/seafood2.webp" alt="Restaurant Interior" class="w-full md:w-1/3 h-auto object-cover p-2">
+      <img src="/images/seafood2.webp" alt="Restaurant Interior" class="w-full md:w-1/3 h-auto object-cover ">
       <div class="p-6 flex-grow">
         <h2 class="text-3xl font-semibold text-blue-600 dark:text-blue-400">Restaurant Interior</h2>
         <p class="mt-4 text-gray-600 dark:text-gray-300">Relax in our beautifully designed restaurant.</p>
@@ -63,9 +107,9 @@
     </div>
   </div>
 
-  <div id="seafood-platter" class="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden w-full max-w-4xl mx-4 mt-10 px-4 sm:px-8">
+  <div id="seafood-platter" class="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden w-full max-w-7xl mx-4 mt-28 md:mt-32">
     <div class="flex flex-col md:flex-row">
-      <img src="/images/seafood1.webp" alt="Seafood Platter" class="w-full md:w-1/3 h-auto object-cover p-2">
+      <img src="/images/seafood1.webp" alt="Seafood Platter" class="w-full md:w-1/3 h-auto object-cover ">
       <div class="p-6 flex-grow">
         <h2 class="text-3xl font-semibold text-blue-600 dark:text-blue-400">Seafood Platter</h2>
         <p class="mt-4 text-gray-600 dark:text-gray-300">A variety of fresh seafood.</p>
@@ -73,9 +117,9 @@
     </div>
   </div>
 
-  <div id="gourmet-dishes" class="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden w-full max-w-4xl mx-4 mt-10 px-4 sm:px-8">
+  <div id="gourmet-dishes" class="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden w-full max-w-7xl mx-4 mt-28 md:mt-32">
     <div class="flex flex-col md:flex-row">
-      <img src="/images/seafood2.webp" alt="Gourmet Dishes" class="w-full md:w-1/3 h-auto object-cover p-2">
+      <img src="/images/seafood2.webp" alt="Gourmet Dishes" class="w-full md:w-1/3 h-auto object-cover ">
       <div class="p-6 flex-grow">
         <h2 class="text-3xl font-semibold text-blue-600 dark:text-blue-400">Gourmet Dishes</h2>
         <p class="mt-4 text-gray-600 dark:text-gray-300">Exquisite seafood dishes.</p>
@@ -83,9 +127,9 @@
     </div>
   </div>
 
-  <div id="sustainable-seafood" class="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden w-full max-w-4xl mx-4 mt-10 px-4 sm:px-8">
+  <div id="sustainable-seafood" class="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden w-full max-w-7xl mx-4 mt-28 md:mt-32">
     <div class="flex flex-col md:flex-row">
-      <img src="/images/seafood1.webp" alt="Sustainable Seafood" class="w-full md:w-1/3 h-auto object-cover p-2">
+      <img src="/images/seafood1.webp" alt="Sustainable Seafood" class="w-full md:w-1/3 h-auto object-cover ">
       <div class="p-6 flex-grow">
         <h2 class="text-3xl font-semibold text-blue-600 dark:text-blue-400">Sustainable Seafood</h2>
         <p class="mt-4 text-gray-600 dark:text-gray-300">Responsibly sourced seafood.</p>
@@ -93,9 +137,9 @@
     </div>
   </div>
 
-  <div id="family-friendly" class="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden w-full max-w-4xl mx-4 mt-10 px-4 sm:px-8">
+  <div id="family-friendly" class="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden w-full max-w-7xl mx-4 mt-28 md:mt-32">
     <div class="flex flex-col md:flex-row">
-      <img src="/images/seafood2.webp" alt="Family Friendly" class="w-full md:w-1/3 h-auto object-cover p-2">
+      <img src="/images/seafood2.webp" alt="Family Friendly" class="w-full md:w-1/3 h-auto object-cover ">
       <div class="p-6 flex-grow">
         <h2 class="text-3xl font-semibold text-blue-600 dark:text-blue-400">Family Friendly</h2>
         <p class="mt-4 text-gray-600 dark:text-gray-300">A great place for family gatherings.</p>
@@ -103,9 +147,9 @@
     </div>
   </div>
 
-  <div id="cozy-atmosphere" class="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden w-full max-w-4xl mx-4 mt-10 px-4 sm:px-8">
+  <div id="cozy-atmosphere" class="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden w-full max-w-7xl mx-4 mt-28 md:mt-32">
     <div class="flex flex-col md:flex-row">
-      <img src="/images/seafood1.webp" alt="Cozy Atmosphere" class="w-full md:w-1/3 h-auto object-cover p-2">
+      <img src="/images/seafood1.webp" alt="Cozy Atmosphere" class="w-full md:w-1/3 h-auto object-cover ">
       <div class="p-6 flex-grow">
         <h2 class="text-3xl font-semibold text-blue-600 dark:text-blue-400">Фомин Дмитрий - Шеф повар</h2>
         <p class="mt-4 text-gray-600 dark:text-gray-300">О себе: уже как 20 лет, я занимаюсь профессионально продуктами, работал в разных странах, видел много технологий, как можно работать и создавать новые продукты. В этом блоге вы узнаете, как создавать новые продукты, какое нужно оборудование, какие современные технологии должен изучать повар, чтобы стать не просто Шеф-поваром, но и хорошим управляющим своего бизнеса.</p>
@@ -116,9 +160,33 @@
     </div>
   </div>
 
-  <script src="js/theme-switcher.js"></script>
+  <script src="/js/theme-switcher.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
