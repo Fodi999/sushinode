@@ -1,33 +1,31 @@
- "use strict";
+ //js/theme-switcher.js
+"use strict";
 const themeToggleBtn = document.getElementById('theme-toggle');
+const themeIcon = document.getElementById('theme-icon');
 const htmlElement = document.documentElement;
 
 if (themeToggleBtn) {
     themeToggleBtn.addEventListener('click', () => {
-        console.log('Toggle button clicked');
         if (htmlElement.classList.contains('dark')) {
             htmlElement.classList.remove('dark');
             localStorage.setItem('theme', 'light');
-            console.log('Switched to light mode');
+            themeIcon.classList.replace('bx-moon', 'bx-sun');
         } else {
             htmlElement.classList.add('dark');
             localStorage.setItem('theme', 'dark');
-            console.log('Switched to dark mode');
+            themeIcon.classList.replace('bx-sun', 'bx-moon');
         }
-        console.log('Current classList:', htmlElement.classList);
     });
 }
 
 const storedTheme = localStorage.getItem('theme');
 const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-console.log('Stored theme:', storedTheme);
-console.log('Prefers dark mode:', prefersDark);
-
 if (storedTheme === 'dark' || (!storedTheme && prefersDark)) {
     htmlElement.classList.add('dark');
-    console.log('Initial theme set to dark mode');
+    themeIcon.classList.replace('bx-sun', 'bx-moon');
 } else {
     htmlElement.classList.remove('dark');
-    console.log('Initial theme set to light mode');
+    themeIcon.classList.replace('bx-moon', 'bx-sun');
 }
+

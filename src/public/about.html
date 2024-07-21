@@ -1,0 +1,142 @@
+// src/public/about.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Seafood Restaurant</title>
+  <link rel="stylesheet" href="/css/output.css">
+  <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 dark:bg-gray-900 dark:text-white min-h-screen flex flex-col items-center">
+  <!-- Fixed top menu -->
+  <div class="fixed top-4 left-4 right-4 bg-gray-200 bg-opacity-75 dark:bg-gray-700 dark:bg-opacity-75 p-4 flex justify-between items-center rounded-full z-10">
+    <a href="index.html" class="w-10 h-10 bg-blue-600 bg-opacity-75 text-white rounded-full flex items-center justify-center">
+      <i class='bx bx-home text-2xl'></i>
+    </a>
+    <div class="flex space-x-4">
+      <a href="https://t.me/your-telegram-link" target="_blank" class="w-10 h-10 bg-blue-600 bg-opacity-75 text-white rounded-full flex items-center justify-center">
+        <i class='bx bxl-telegram text-2xl'></i>
+      </a>
+      <a href="https://instagram.com/your-instagram-link" target="_blank" class="w-10 h-10 bg-pink-600 bg-opacity-75 text-white rounded-full flex items-center justify-center">
+        <i class='bx bxl-instagram text-2xl'></i>
+      </a>
+      <button id="menu-toggle" class="w-10 h-10 md:hidden bg-gray-200 bg-opacity-75 text-black rounded-full flex items-center justify-center dark:bg-gray-700 dark:bg-opacity-75 dark:text-white">
+        <i class='bx bx-menu'></i>
+      </button>
+      <button id="theme-toggle" class="w-10 h-10 bg-gray-200 bg-opacity-75 text-black rounded-full flex items-center justify-center dark:bg-gray-700 dark:bg-opacity-75 dark:text-white">
+        <i id="theme-icon" class='bx bx-moon text-2xl'></i> 
+      </button>
+    </div>
+  </div>
+
+  <!-- Card Sections -->
+  <div id="delicious-seafood" class="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden w-full max-w-4xl mx-4 mt-28 md:mt-32 px-4 sm:px-8">
+    <div class="flex flex-col md:flex-row">
+      <img src="/images/seafood1.webp" alt="Delicious Seafood" class="w-full md:w-1/3 h-auto object-cover p-2">
+      <div class="p-6 flex-grow">
+        <h2 class="text-3xl font-semibold text-blue-600 dark:text-blue-400">Delicious Seafood</h2>
+        <p class="mt-4 text-gray-600 dark:text-gray-300">Experience the taste of fresh seafood.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="fresh-seafood" class="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden w-full max-w-4xl mx-4 mt-10 px-4 sm:px-8">
+    <div class="flex flex-col md:flex-row">
+      <img src="/images/seafood2.webp" alt="Fresh Seafood" class="w-full md:w-1/3 h-auto object-cover p-2">
+      <div class="p-6 flex-grow">
+        <h2 class="text-3xl font-semibold text-blue-600 dark:text-blue-400">Fresh Seafood</h2>
+        <p class="mt-4 text-gray-600 dark:text-gray-300">Enjoy our freshly caught seafood.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add more sections for each anchor as needed -->
+  <div id="restaurant-interior" class="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden w-full max-w-4xl mx-4 mt-10 px-4 sm:px-8">
+    <div class="flex flex-col md:flex-row">
+      <img src="/images/seafood2.webp" alt="Restaurant Interior" class="w-full md:w-1/3 h-auto object-cover p-2">
+      <div class="p-6 flex-grow">
+        <h2 class="text-3xl font-semibold text-blue-600 dark:text-blue-400">Restaurant Interior</h2>
+        <p class="mt-4 text-gray-600 dark:text-gray-300">Relax in our beautifully designed restaurant.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="seafood-platter" class="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden w-full max-w-4xl mx-4 mt-10 px-4 sm:px-8">
+    <div class="flex flex-col md:flex-row">
+      <img src="/images/seafood1.webp" alt="Seafood Platter" class="w-full md:w-1/3 h-auto object-cover p-2">
+      <div class="p-6 flex-grow">
+        <h2 class="text-3xl font-semibold text-blue-600 dark:text-blue-400">Seafood Platter</h2>
+        <p class="mt-4 text-gray-600 dark:text-gray-300">A variety of fresh seafood.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="gourmet-dishes" class="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden w-full max-w-4xl mx-4 mt-10 px-4 sm:px-8">
+    <div class="flex flex-col md:flex-row">
+      <img src="/images/seafood2.webp" alt="Gourmet Dishes" class="w-full md:w-1/3 h-auto object-cover p-2">
+      <div class="p-6 flex-grow">
+        <h2 class="text-3xl font-semibold text-blue-600 dark:text-blue-400">Gourmet Dishes</h2>
+        <p class="mt-4 text-gray-600 dark:text-gray-300">Exquisite seafood dishes.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="sustainable-seafood" class="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden w-full max-w-4xl mx-4 mt-10 px-4 sm:px-8">
+    <div class="flex flex-col md:flex-row">
+      <img src="/images/seafood1.webp" alt="Sustainable Seafood" class="w-full md:w-1/3 h-auto object-cover p-2">
+      <div class="p-6 flex-grow">
+        <h2 class="text-3xl font-semibold text-blue-600 dark:text-blue-400">Sustainable Seafood</h2>
+        <p class="mt-4 text-gray-600 dark:text-gray-300">Responsibly sourced seafood.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="family-friendly" class="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden w-full max-w-4xl mx-4 mt-10 px-4 sm:px-8">
+    <div class="flex flex-col md:flex-row">
+      <img src="/images/seafood2.webp" alt="Family Friendly" class="w-full md:w-1/3 h-auto object-cover p-2">
+      <div class="p-6 flex-grow">
+        <h2 class="text-3xl font-semibold text-blue-600 dark:text-blue-400">Family Friendly</h2>
+        <p class="mt-4 text-gray-600 dark:text-gray-300">A great place for family gatherings.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="cozy-atmosphere" class="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden w-full max-w-4xl mx-4 mt-10 px-4 sm:px-8">
+    <div class="flex flex-col md:flex-row">
+      <img src="/images/seafood1.webp" alt="Cozy Atmosphere" class="w-full md:w-1/3 h-auto object-cover p-2">
+      <div class="p-6 flex-grow">
+        <h2 class="text-3xl font-semibold text-blue-600 dark:text-blue-400">Фомин Дмитрий - Шеф повар</h2>
+        <p class="mt-4 text-gray-600 dark:text-gray-300">О себе: уже как 20 лет, я занимаюсь профессионально продуктами, работал в разных странах, видел много технологий, как можно работать и создавать новые продукты. В этом блоге вы узнаете, как создавать новые продукты, какое нужно оборудование, какие современные технологии должен изучать повар, чтобы стать не просто Шеф-поваром, но и хорошим управляющим своего бизнеса.</p>
+        <p class="mt-4 text-gray-600 dark:text-gray-300">Этот блог написан для тех, кто готов открыть для себя восхитительные комбинации вкусов. Хочу рассказать и научить вас готовить новые блюда, которые я придумываю и готовлю для того, чтобы удивить вас и поделиться с вами идеями и вкусами. Для каждого повара возможность творить из того, что есть под рукой, всегда удивительна и прекрасна. Строгие рецепты ограничивают творчество. До недавнего времени методом проб и ошибок был единственным способом узнать, какие продукты будут хорошо сочетаться между собой. А украсить своим творением семейный стол - двойное удовольствие. Новое всегда будет радостью для своих любимых и друзей. И независимо от того, что у вас в результате получится, вы можете быть твердо уверены в одном: это всегда будет вкусно и полезно.</p>
+        <p class="mt-4 text-gray-600 dark:text-gray-300">Как и в любом деле, здесь также важно умение обращаться с инвентарем и знание технологического процесса. Поварское ремесло не отличается от других: вашими инструментами могут быть голые руки, а принадлежностями продукты, но при этом также важно знать то, как они должны действовать и взаимодействовать с другими компонентами. Я расскажу, с какими продуктами я работаю, и какую пользу они приносят нам. Чтобы не начинать с чистого листа, вы сможете брать эти рецепты за основу и создавать новые кулинарные шедевры.</p>
+        <p class="mt-4 text-gray-600 dark:text-gray-300">Вы опытный повар или новичок? Кем бы вы ни были, надеюсь, этот блог поможет вам раскрыть ваши таланты. Добавьте щепотку науки о вкусе в свое блюдо знаний! Пусть этот блог откроет вам мир новых гастрономических вкусов.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/theme-switcher.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
